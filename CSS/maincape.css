@@ -1,30 +1,63 @@
+/** Type Selectors **/
+
 body {
 	color: green;
 	margin: 0;
-}
-
-header {
-	background-color:green;
+	font-size: 1em;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.5;
 }
 
 h1 {
 	color:gold;
-	font-size: 90px;
+	font-size: 5.625em;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1.2;
 }
 
 h2 {
 	color: gold;
-	font-size: 50px;
+	font-size: 3.125em;
+	text-decoration: underline;
+	font-weight: normal;
 }
 
 h3 {
 	color:gold;
-	font-size: 25px;
+	font-size: 1.5625em;
 }
 
-#primary-content {
-	border: solid green 3px;
+
+/** Class Selectors **/
+
+
+.main-header {
+	background-color:green;
 }
+
+.title {
+	color: white;
+	font-size:1.5625em;
+}
+
+.primary-content, .main-header {
+	text-align:center;
+}
+
+.secondary-content {
+	text-align: center;
+}
+
+.primary-content, .secondary-content {
+	width: 70%;
+}
+
+.top-border {
+	border-top: green solid 3px;
+}
+
+/** ID Selectors **/
 
 #main-footer {
 	border-bottom: green solid 10px;
@@ -32,4 +65,26 @@ h3 {
 	padding-bottom: 20px;
 }
 
+/** Psuedo-Class Selectors **/
 
+a:link {
+	color: green;
+	text-decoration: none;
+}
+
+a:visited {
+	color:lightblue;
+}
+
+a:hover {
+	color:lightgreen;
+}
+
+a:focus {
+	background-color: tomato;
+	color: white;
+}
+
+a:active {
+	color:tomato;
+}
